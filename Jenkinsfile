@@ -19,9 +19,7 @@ pipeline {
                 docker { image 'maven:3-openjdk-18' }
             }
             steps {
-                sh '''
-                mvn test
-                '''
+                sh 'mvn test'
             }
         }
 
