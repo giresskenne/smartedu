@@ -16,10 +16,13 @@ pipeline {
     stages {
         stage('Test the code with Docker') {
             agent {
-                docker { image 'maven:3-openjdk-18' }
+                docker {
+                    image 'maven:3-openjdk-18'
+                    args '-v /var/run/docker.sock:/var/run/docker.sock'
+                }
             }
             steps {
-                sh 'mvn test'
+                sh 'mvn clean install'
             }
         }
 
