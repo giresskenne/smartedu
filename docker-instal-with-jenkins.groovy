@@ -6,13 +6,13 @@ pipeline {
         DOCKER_VERSION = '5:20.10.24~3-0~ubuntu'
     }
 
-    parameters {
+    // parameters {
         // Define parameters
         // string(name: 'BRANCH', defaultValue: 'main', description: 'Branch to build')
         // choices(name: 'VERSION', defaultValue: 'main', description: 'Branch to build')
         // booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run tests')
         // choice(name: 'DEPLOY_ENV', choices: ['development', 'staging', 'production'], description: 'Deployment environment')
-    }
+    // }
 
     stages {
         stage('Installing Docker') {
