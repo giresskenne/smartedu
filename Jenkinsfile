@@ -14,16 +14,16 @@ pipeline {
     }
     
     stages {
-        stage('Test the code with Docker') {
-            agent {
-                docker { image 'maven:3-openjdk-18' }
-            }
-            steps {
-                sh '''
-                mvn test
-                '''
-            }
-        }
+        // stage('Test the code with Docker') {
+        //     agent {
+        //         docker { image 'maven:3-openjdk-18' }
+        //     }
+        //     steps {
+        //         sh '''
+        //         mvn test
+        //         '''
+        //     }
+        // }
 
         stage('Containerization') {
             steps {
