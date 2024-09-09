@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/apps/v1@deployment": "file:///Users/user/Documents/DEVOPS%20EASY%20LEARNING/smartedu/deploy/deploy.yaml"
+    }
+}
