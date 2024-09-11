@@ -25,7 +25,7 @@ pipeline {
         //     }
         // }
 
-        stage('Containerization') {
+        stage('Building the image') {
             steps {
                 script {
                     // Containerize using the Dockerfile in the workspace
@@ -52,3 +52,8 @@ pipeline {
         }
     }
 }
+
+
+
+
+
