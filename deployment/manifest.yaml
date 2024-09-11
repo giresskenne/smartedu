@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartedu-deployment
+  labels:
+    app: smartedu-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: smartedu-app
+  template:
+    metadata:
+      labels:
+        app: smartedu-app
+    spec:
+      containers:
+      - name: smartedu
+        image: devopseasylearning/smartedu:latest   # Use your local image name and tag here
+        ports:
+        - containerPort: 80 
