@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: smartedu
-        image: devopseasylearning/smartedu:latest   # Use your local image name and tag here
+        image: giresskenn/smartedu:latest   # Use your local image name and tag here
         ports:
         - containerPort: 80
         # env: 
@@ -35,5 +35,5 @@ spec:
         #     configMapKeyRef: 
         #       name: smartedu-config
         #       key: dockerhub_url
-      imagePullSecrets:
-      - name: smartedu-secret  # Reference to the secret if needed
+      # imagePullSecrets:
+      # - name: smartedu-secret  # Reference to the secret if needed
